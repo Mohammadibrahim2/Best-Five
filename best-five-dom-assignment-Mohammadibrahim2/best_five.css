@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	height: 75vh;
+	background-color:#000;
+	color: #fff;
+
+}
+.grid-field{
+
+	display: grid;
+	grid-column-gap: 20px;
+	grid-template-columns: 300px 800px 300px;
+}
+.header-pic{
+	
+	position: relative;
+	height: 75vh;
+	width: 200px;
+	
+}
+.header-pic img{
+	top: 15%;
+	left: 15px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.header-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.header-text h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-size:70px;
+	 font-family: 'Kalam', cursive;
+	 font-weight: 900;
+	 color: #eb2f06;
+
+}
+.header-text p{
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.header-secondary-pic{
+	height: 150px;
+	width: 140px;
+	position: relative;
+	
+
+}
+.header-secondary-pic img{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+	position: absolute;
+	top: 30%;
+}
+/*...............main section...................*/
+main{
+	height: auto;
+	width: 100%;
+	background-color: #111;
+
+}
+.partition{
+	padding:80px 0;
+	max-width: 80%;
+	margin: auto;
+	
+	
+	display: grid;
+	grid-column-gap: 15px;
+	grid-row-gap: 13px;
+	grid-template-columns:repeat(12,1fr);
+}
+.cards
+{
+	display: grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-row-gap:20px;
+	grid-column-gap:19px;
+	width: 60%;
+}
+.card{
+	width: 250px;
+	height:340px;
+	background-color:#000 ;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	border: 1px solid #333;
+}
+.card-img{
+	width: 250px;
+
+	margin-bottom: 0;
+
+}
+.card-img img{
+	width: 100%;
+	object-fit: cover;
+}
+.player-info{
+	width: 100%;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;	
+}
+.player-info p{
+color: gray;
+}
+.player-info button{
+	width: 200px;
+
+}
+button{
+	font-size: 20px;
+	padding: 9px 20px;
+	background-color: blue;
+	color: #fff;
+}
+
+.select-player{
+	margin-bottom: 19px;
+	padding: 10px;
+	text-align: center;
+	width: 250px;
+	height: 320px;
+	color: #fff;
+	background-color: #000;
+	margin-bottom: 5px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.select-player h1{
+	margin-top: 18px;
+}
+.player-budget{
+	margin-top: 19px;
+	padding-top: 30px;
+	text-align: center;
+	width: 250px;
+	min-height: 450px;
+	color:#fff;
+	background-color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+/*select player........................*/
+.order-list{
+	width: 200px;
+	height: 250px;
+	margin:30px;
+	padding-left: 35px;
+	
+}
+.order-list li{
+	color:#eb2f06;
+	font-size: 25px;
+	text-align: left;
+	margin-top: 6px;
+}
+
+
+/*player budget calculate...............*/
+
+.calculation-part{
+	padding: 20px 0 30px 0;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;	
+}
+.arange-budget{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	font-size: 20px;
+	
+}
+.arange-budget input{
+	width: 90px;
+	height: 30px;
+	padding: 0 3px;
+	font-size: 17px;
+	outline: none;
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid gray;
+}
+.calculate-btn{
+	width: 80%;
+	
+}
+.todegin{
+	color:#eb2f06 ;
+}
+/*.............footer.................*/
+footer{
+	border-top: 2px solid gray;
+	width: 100%;
+	height: 90px;
+	text-align: center;
+	background-color: #111;
+	color: #fff;
+}
+footer p{
+	padding: 30px 0;
+	font-size: 18px;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
